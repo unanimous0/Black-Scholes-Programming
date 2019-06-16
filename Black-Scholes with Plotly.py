@@ -38,14 +38,12 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 init_notebook_mode(connected=True)  # To choose whether to show the graph into the jupyter notebook or IDE
 
 def Variation_of_Call_Option_Price():
-    # Fixed value
+    # Parameters
     K = 100
     r = 0.01
     sigma = 0.25
 
-    # Variables
-    # Let's suppose that only the both variables, T and S, change. Then, make only T and S an array. 
-    #  - The other variables have a fixed value.
+    # Variables - Time to Maturity & The price of an underlying asset
     T = np.linspace(0,1,100)
     S = np.linspace(0,200,100)
     T, S = np.meshgrid(T,S)
