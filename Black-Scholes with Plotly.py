@@ -44,7 +44,7 @@ def Variation_of_Call_Option_Price():
     sigma = 0.25
 
     # Variables
-    # The reason to make only T and S an array is that only the both variables change. 
+    # Let's suppose that only the both variables, T and S, change. Then, make only T and S an array. 
     #  - The other variables have a fixed value.
     T = np.linspace(0,1,100)
     S = np.linspace(0,200,100)
